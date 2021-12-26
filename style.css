@@ -17,11 +17,11 @@
     left: 200px;
     width: 50px;
     height: 50px;
-    opacity: 0;
+    /* opacity: 0; */
 }
-#cow:hover {
+/* #cow:hover {
     cursor: pointer;
-}
+} */
 #point {
     font-size: 30px;
     margin: 20px;

@@ -2,10 +2,12 @@ let cow = document.getElementById('cow')
 let music = document.getElementById('music')
 let field = document.getElementById('field')
 const yourPoint = document.getElementById('point')
+const hitSound = document.getElementById('hit-sound')
 const cowPosition = {
     x : 0,
     y : 0,
 }
+music.play()
 cow.style.width = '50px'
 cow.style.height = '50px'
 
@@ -38,6 +40,11 @@ music.volume = 0.2
 cow.addEventListener ('click' , (e) => {
     point += 1
     yourPoint.innerText = `Your point: ${point}`
+    hitSound.play()
+    music.pause()
+    setTimeout(function() {
+        music.play()
+    },1500)
     randomCowPosition()
 })
 field.addEventListener ('mousemove' , (event) => {
@@ -46,6 +53,9 @@ field.addEventListener ('mousemove' , (event) => {
     let volume = calcVol(distanceBetweenMouseAndCow)
     music.volume = volume
     console.log(volume);
+})
+field.addEventListener ('click' , () => {
+    randomCowPosition()
 })
 
 
