@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Find the cow</title>
 </head>
 <body>
-    
-    <div id="field">
-        <img id="cow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_KQYzYChNEbe_ZdWjFX4vhSnf7W9ULijYg&usqp=CAU" alt="">
-        <div id="point">Your point: 0</div>
+    <div class="main">
+        <div class="title">
+            <span id="game-title">FIND THE COW</span> 
+            <img id="cow" src="https://cdn-icons-png.flaticon.com/512/220/220127.png" alt="">
+        </div>
+        <div class="intro">
+            <div>This game proves you’re not useless</div>
+            <div>Are you useless ?</div>
+            <div>Let’s find out</div>
+        </div>
+        <div class="game-mode">
+            <a href="./game.html" class="difficulty" id="easy">Easy</a>
+            <a href="./game.html" class="difficulty" id="medium">Medium</a>
+            <a href="./game.html" class="difficulty" id="hard">Hard</a>
+        </div>
     </div>
-    <audio id="music" autoplay loop>
-        <source src="./moo.mp3" type="audio/mp3"/>
-    </audio>
-    <audio id="hit-sound">
-        <source src="./moo-bitch.mp3" type="audio/mp3"/>
-    </audio>
     <script src="index.js"></script>
 </body>
 </html>

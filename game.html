@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f14166a5fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="game.css">
+    <title>Find the cow</title>
+</head>
+<body>
+    
+    <div id="field">
+        <a id="back" href="./index.html"><i class="fas fa-hand-point-left"></i> Back</a>
+        <div>
+            <img id="cow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_KQYzYChNEbe_ZdWjFX4vhSnf7W9ULijYg&usqp=CAU" alt="">
+            <div id="point" class="point">Your point: 0</div>
+            <div id="highestPoint" class="point">Highest point: 0</div>
+            <div id="time" class="point">Time left: --s</div>
+        </div>
+    </div>
+    
+
+    <audio id="music" autoplay loop>
+        <source src="./moo.mp3" type="audio/mp3"/>
+    </audio>
+    <audio id="hit-sound">
+        <source src="./moo-bitch.mp3" type="audio/mp3"/>
+    </audio>
+    <audio id="missed">
+        <source src="./missed.mp3" type="audio/mp3"/>
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html>
